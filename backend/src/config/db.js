@@ -9,7 +9,7 @@ const __dirname = path.dirname(__filename);
 // Database file path
 const dbPath = path.join(__dirname, "../../data/support.db");
 
-// Create DB connection
+// DB connection
 const db = new sqlite3.Database(dbPath, (err) => {
   if (err) {
     console.error("SQLite connection error:", err.message);
@@ -18,9 +18,8 @@ const db = new sqlite3.Database(dbPath, (err) => {
   }
 });
 
-// Create tables safely
 db.serialize(() => {
-  // Enable foreign key constraints
+  // foreign key constraints
   db.run("PRAGMA foreign_keys = ON");
 
   db.run(`
