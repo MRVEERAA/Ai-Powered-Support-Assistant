@@ -1,10 +1,18 @@
 [
   {
     "title": "Reset Password",
-    "content": "Users can reset password from Settings > Security."
+    "content": "Users can reset their password from Settings > Security."
   },
   {
     "title": "Refund Policy",
     "content": "Refunds are allowed within 7 days of purchase."
+  },
+  {
+    "title": "Change Email",
+    "content": "Users can change their email address from Profile Settings."
+  },
+  {
+    "title": "Delete Account",
+    "content": "Account deletion is permanent and can be done from Settings > Danger Zone."
   }
 ]
